@@ -38,6 +38,7 @@
     }
 
     // 等待页面加载完成
+    /*
     window.addEventListener('load', function() {
         if (window.location.href.includes('*.codemao.cn')) {
             // 检测是否存在特定标签
@@ -57,6 +58,7 @@
             });
         }
     });
+    */
 
     // 重写 XMLHttpRequest
     (function(open) {

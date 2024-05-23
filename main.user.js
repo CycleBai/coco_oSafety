@@ -92,6 +92,7 @@
     window.WebSocket = function(url, protocols) {
         // 检查 URL 是否包含特定字符串
         if (url.includes('ws://socketcv.codemao.cn:9096')) {
+            unsafeRequestBlockNotice()
             console.error('Blocked WebSocket connection to:', url);
             throw new Error('OSafety 拦截危险 WebSocket：改云。');
         }
